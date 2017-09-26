@@ -1,0 +1,18 @@
+<div>
+  <input [(ngModel)]="xxx">
+</div>
+
+<div *ngFor="let e of animals | filter:'name':xxx" class="animal">
+  <p>{{ e.name | uppercase }}</p>
+  <img [src]="e.img" height=100>
+</div>
+
+<div class="">
+  <button (click)="toggleInput()"> Click me! </button>
+  <div *ngIf="isInputDisabled">
+    <img src="http://dvocion.diariovasco.com/television/splash-famosos-agua/fotos/falete-splash-famosos-agua-1.jpg" height=200>
+  </div>
+  <div *ngIf="!isInputDisabled">
+    <img src="http://i.dailymail.co.uk/i/pix/2016/07/31/12/36BF364700000578-3716773-image-a-6_1469963340987.jpg" height=200>
+  </div>
+</div>

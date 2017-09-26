@@ -1,0 +1,10 @@
+.animal{
+  display: inline-block;
+}
+.animal .bordered{
+  border: 2px dashed red;
+}
+
+.bingo{
+  color:red;
+}
